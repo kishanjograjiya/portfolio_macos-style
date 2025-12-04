@@ -11,6 +11,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "#components": resolve(rootDir, "src/components"),
+      "#constants": resolve(rootDir, "src/constants"),
     },
   },
 });
