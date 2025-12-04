@@ -21,7 +21,7 @@ const Navbar = () => {
         <ul>
           {navIcons.map(({ id, img }) => (
             <li key={id}>
-              <img src={img} alt={`icon-${id}`} />
+              <img src={img} alt={`icon-${id}`} className="icon" />
             </li>
           ))}
         </ul>
