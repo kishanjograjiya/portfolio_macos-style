@@ -33,14 +33,14 @@ body {
 
 @layer base {
   main {
-    @apply w-dvw h-dvh overflow-hidden;
+    @apply h-dvh w-dvw overflow-hidden;
   }
 
   nav {
-    @apply flex justify-between items-center bg-white/50 backdrop-blur-3xl p-2 px-5 select-none;
+    @apply flex items-center justify-between bg-white/50 p-2 px-5 backdrop-blur-3xl select-none;
 
     div {
-      @apply flex items-center max-sm:w-full max-sm:justify-center gap-5;
+      @apply flex items-center gap-5 max-sm:w-full max-sm:justify-center;
 
       &:last-child {
         @apply max-sm:hidden;
@@ -51,7 +51,7 @@ body {
       @apply flex items-center gap-5 max-sm:hidden;
 
       p {
-        @apply text-sm cursor-pointer hover:underline transition-all;
+        @apply cursor-pointer text-sm transition-all hover:underline;
       }
     }
 
@@ -63,17 +63,37 @@ body {
 
 @layer components {
   .icon {
-    @apply p-1 hover:bg-gray-200 rounded hover:cursor-default;
+    @apply rounded p-1 hover:cursor-default hover:bg-gray-200;
   }
 
   #welcome {
-    @apply text-gray-200 flex flex-col justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none max-sm:h-screen max-sm:w-full max-sm:px-10;
+    @apply absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center text-gray-200 select-none max-sm:h-screen max-sm:w-full max-sm:px-10;
 
     .small-screen {
-      @apply sm:hidden m-7 bg-red-300/20 backdrop-blur-lg p-3 rounded-md absolute top-10;
+      @apply absolute top-10 m-7 rounded-md bg-red-300/20 p-3 backdrop-blur-lg sm:hidden;
 
       p {
-        @apply flex-1 text-[16px] text-center font-roboto text-gray-400;
+        @apply flex-1 text-center font-roboto text-[16px] text-gray-400;
+      }
+    }
+  }
+
+  #dock {
+    @apply absolute bottom-5 left-1/2 z-50 -translate-x-1/2 select-none max-sm:hidden;
+
+    .dock-container {
+      @apply flex items-end justify-between gap-1.5 rounded-2xl bg-white/20 p-1.5 backdrop-blur-md;
+    }
+
+    .tooltip {
+      @apply w-fit! rounded-md! bg-blue-200! px-3! py-1! text-center! text-xs! text-blue-900! shadow-2xl!;
+    }
+
+    .dock-icon {
+      @apply size-14 cursor-pointer 3xl:size-20;
+
+      img {
+        @apply object-cover object-center;
       }
     }
   }
