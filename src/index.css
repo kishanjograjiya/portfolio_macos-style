@@ -97,4 +97,70 @@ body {
       }
     }
   }
+
+  #window-controls {
+    @apply flex gap-2;
+
+    .close {
+      @apply size-3.5 cursor-pointer rounded-full bg-[#ff6157];
+    }
+
+    .minimize {
+      @apply size-3.5 rounded-full bg-[#ffc030];
+    }
+
+    .maximize {
+      @apply size-3.5 rounded-full bg-[#2acb42];
+    }
+  }
+
+  #window-header {
+    @apply flex items-center justify-between rounded-t-lg border-b border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-400 select-none;
+  }
+
+  #terminal {
+    @apply absolute top-32 left-1/12 w-xl overflow-hidden rounded-xl bg-white shadow-2xl drop-shadow-2xl;
+
+    h2 {
+      @apply w-full text-center text-sm font-bold;
+    }
+
+    .techstack {
+      @apply p-5 font-roboto text-sm;
+
+      .label {
+        @apply ms-10 mt-7 flex items-center;
+      }
+
+      .content {
+        @apply my-5 space-y-1 border-y border-dashed py-5;
+
+        li {
+          .check {
+            @apply w-5 text-[#00A154];
+          }
+
+          h3 {
+            @apply ms-5 w-32 font-semibold text-[#00A154];
+          }
+
+          ul {
+            @apply flex items-center gap-3;
+          }
+        }
+      }
+
+      .footnote {
+        @apply space-y-1 text-[#00A154];
+
+        p {
+          @apply flex items-center;
+
+          svg {
+            @apply me-5 w-5;
+          }
+        }
+      }
+    }
+  }
 }
