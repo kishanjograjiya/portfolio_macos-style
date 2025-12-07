@@ -20,6 +20,37 @@ export const dockApps = [
   { id: "trash", name: "Archive", icon: "trash.png", canOpen: false },
 ];
 
+export const techStack = [
+  {
+    category: "Frameworks & Libraries",
+    items: ["React.js", "Next.js", "Vue.js", "Nuxt.js"],
+  },
+  {
+    category: "Languages",
+    items: ["JavaScript", "TypeScript", "PHP"],
+  },
+  {
+    category: "Mobile",
+    items: ["React Native", "Expo"],
+  },
+  {
+    category: "Styling",
+    items: ["Tailwind CSS", "Sass", "CSS"],
+  },
+  {
+    category: "Backend",
+    items: ["Node.js", "Express", "Laravel"],
+  },
+  {
+    category: "Database",
+    items: ["MongoDB", "MySQL"],
+  },
+  {
+    category: "Dev Tools",
+    items: ["Git", "GitHub", "Docker"],
+  },
+];
+
 export const INITIAL_Z_INDEX = 1000;
 
 export const WINDOW_CONFIG = {
