@@ -163,4 +163,48 @@ body {
       }
     }
   }
+
+  #safari {
+    @apply absolute top-40 left-2/12 w-4xl overflow-hidden rounded-xl bg-white shadow-2xl drop-shadow-2xl;
+
+    .search {
+      @apply flex items-center gap-3 w-2/3 bg-white border border-gray-300 rounded-lg px-3 py-2;
+
+      input {
+        @apply placeholder:text-gray-400;
+      }
+    }
+
+    .blog {
+      @apply mx-auto max-w-3xl bg-white p-10;
+
+      h2 {
+        @apply mb-10 text-xl font-bold text-pink-600;
+      }
+
+      .blog-post {
+        @apply grid grid-cols-12 space-x-5;
+
+        img {
+          @apply size-full rounded-md object-cover;
+        }
+
+        .content {
+          @apply col-span-10 space-y-3;
+
+          p {
+            @apply text-xs text-gray-500;
+          }
+
+          h3 {
+            @apply text-base font-semibold text-gray-800;
+          }
+
+          a {
+            @apply flex items-center gap-3 text-xs text-blue-600 hover:underline;
+          }
+        }
+      }
+    }
+  }
 }
