@@ -261,4 +261,12 @@ body {
       }
     }
   }
+
+  #txtfile {
+    @apply absolute top-36 right-32 w-md overflow-hidden rounded-xl bg-white shadow-2xl drop-shadow-2xl;
+
+    h2 {
+      @apply w-full text-center text-sm font-bold;
+    }
+  }
 }
