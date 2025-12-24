@@ -269,4 +269,22 @@ body {
       @apply w-full text-center text-sm font-bold;
     }
   }
+
+  #imgfile {
+    @apply absolute top-40 left-2/12 w-xl overflow-hidden rounded-xl bg-white shadow-2xl drop-shadow-2xl;
+
+    #window-header {
+      p {
+        @apply font-bold text-[#5f6266];
+      }
+    }
+
+    .preview {
+      @apply max-h-[70vh] bg-gray-200 p-2;
+
+      img {
+        @apply h-fit w-full object-contain object-center;
+      }
+    }
+  }
 }
