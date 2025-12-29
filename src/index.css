@@ -315,4 +315,22 @@ body {
       }
     }
   }
+
+  #home {
+    @apply relative z-0 max-sm:hidden;
+
+    ul {
+      li {
+        @apply absolute z-0 flex flex-col items-center select-none;
+
+        img {
+          @apply rounded-md p-1 group-hover:bg-gray-950/10;
+        }
+
+        p {
+          @apply max-w-40 rounded-md px-1 text-center text-sm text-white transition-colors group-hover:bg-blue-500;
+        }
+      }
+    }
+  }
 }
