@@ -4,7 +4,7 @@
 
 Welcome to my portfolio! This project is a creative and interactive personal portfolio designed to mimic the aesthetic and functionality of Apple's macOS desktop. It moves beyond traditional portfolio layouts to offer a unique, engaging user experience where my projects, skills, and contact information are presented as applications and files within a simulated operating system.
 
-![macOS Portfolio Preview](public/macbook.png)
+![macOS Portfolio Preview](public/social-preview.png)
 
 ## ✨ Core Features
 
@@ -67,12 +67,14 @@ c:/Users/admin/Desktop/Projects/portfolio_macos-style/
 To run this project on your local machine, follow these steps:
 
 1.  **Clone the Repository**
+
     ```sh
     git clone https://github.com/kishanjograjiya/portfolio_macos-style.git
     cd portfolio_macos-style
     ```
 
 2.  **Install Dependencies**
+
     ```sh
     npm install
     ```

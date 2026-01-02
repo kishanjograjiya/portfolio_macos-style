@@ -132,11 +132,11 @@ const WORK_LOCATION = {
     // ▶ macbook_landing-page
     {
       id: 5,
-      name: "Macbook Landing Page",
+      name: "Macbook Pro Clone - Landing Page",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-5",
-      windowPosition: "top-[5vh] left-5",
+      position: "top-10 left-10",
+      windowPosition: "top-5 left-5",
       children: [
         {
           id: 1,
@@ -188,11 +188,11 @@ const WORK_LOCATION = {
     // ▶ signalist_stock-traker-app
     {
       id: 6,
-      name: "Signalist — Stock Tracker",
+      name: "Signalist - Stock Tracker App",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-52 right-80",
-      windowPosition: "top-[20vh] left-7",
+      position: "bottom-10 left-10",
+      windowPosition: "top-40 left-5",
       children: [
         {
           id: 1,
@@ -243,11 +243,11 @@ const WORK_LOCATION = {
     // ▶ awwwards-zentry
     {
       id: 7,
-      name: "Awwwards — Zentry Clone",
+      name: "Zentry Clone - Awwwards SOTD",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-80",
-      windowPosition: "top-[33vh] left-7",
+      position: "top-10 right-10",
+      windowPosition: "top-75 left-5",
       children: [
         {
           id: 1,
